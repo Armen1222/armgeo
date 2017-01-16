@@ -1,0 +1,7 @@
+// to view changes
+git status
+
+// to commit codes
+git add .
+git commit -m"<comment>"
+
