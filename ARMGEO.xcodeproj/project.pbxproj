@@ -20,6 +20,8 @@
 		D23A05601E27D856002DFFC0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A055F1E27D856002DFFC0 /* TableViewController.swift */; };
 		D27A10361E2CAE7600C134DB /* ShowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A10351E2CAE7500C134DB /* ShowTableViewController.swift */; };
 		D27A10391E2CB58300C134DB /* ContactusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A10381E2CB58300C134DB /* ContactusViewController.swift */; };
+		D27A103D1E2CDB1B00C134DB /* ArmGeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A103C1E2CDB1B00C134DB /* ArmGeoViewController.swift */; };
+		D27A103F1E2CF39F00C134DB /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A103E1E2CF39F00C134DB /* CityViewController.swift */; };
 		D2A0AC7B1E26AF1D00F673EF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A0AC7A1E26AF1D00F673EF /* AboutViewController.swift */; };
 		DBEFAAFD78FC4A94B2DD1A87 /* Pods_ARMGEOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C8B00DC218A40F6D30374 /* Pods_ARMGEOTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		D23A055F1E27D856002DFFC0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = TableViewController/TableViewController.swift; sourceTree = "<group>"; };
 		D27A10351E2CAE7500C134DB /* ShowTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTableViewController.swift; sourceTree = "<group>"; };
 		D27A10381E2CB58300C134DB /* ContactusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactusViewController.swift; sourceTree = "<group>"; };
+		D27A103C1E2CDB1B00C134DB /* ArmGeoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmGeoViewController.swift; sourceTree = "<group>"; };
+		D27A103E1E2CF39F00C134DB /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D2A0AC7A1E26AF1D00F673EF /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		DF977555A118776C49B612DD /* Pods-ARMGEOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARMGEOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARMGEOUITests/Pods-ARMGEOUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7C3E3FFAD5E300F6660C44C /* Pods_ARMGEOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARMGEOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,8 @@
 		D227CA851E295D9100ACB34A /* SwipeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D27A103C1E2CDB1B00C134DB /* ArmGeoViewController.swift */,
+				D27A103E1E2CF39F00C134DB /* CityViewController.swift */,
 			);
 			name = SwipeViewController;
 			sourceTree = "<group>";
@@ -525,8 +531,10 @@
 				D21A89241E265D2500A28388 /* ViewController.swift in Sources */,
 				D21A89221E265D2500A28388 /* AppDelegate.swift in Sources */,
 				D27A10391E2CB58300C134DB /* ContactusViewController.swift in Sources */,
+				D27A103F1E2CF39F00C134DB /* CityViewController.swift in Sources */,
 				D23A05601E27D856002DFFC0 /* TableViewController.swift in Sources */,
 				D2A0AC7B1E26AF1D00F673EF /* AboutViewController.swift in Sources */,
+				D27A103D1E2CDB1B00C134DB /* ArmGeoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

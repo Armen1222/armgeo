@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aJR-NH-gVD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cSS-Ud-9Gp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,7 +59,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wSC-Fy-tZT" id="VZx-0X-uxt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
@@ -189,6 +189,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnn-hx-Awv" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-346" y="1236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hnl-2L-uc1">
+            <objects>
+                <navigationController id="cSS-Ud-9Gp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n7n-fR-iZx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G0k-eR-FA2" kind="relationship" relationship="rootViewController" id="Eia-aa-Qfs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAi-8x-7Fj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769" y="1782"/>
+        </scene>
+        <!--Arm Geo View Controller-->
+        <scene sceneID="6Rr-Ku-73o">
+            <objects>
+                <viewController id="G0k-eR-FA2" customClass="ArmGeoViewController" customModule="ARMGEO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Nh-EH-QTS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlM-vi-6eK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Walkthrough" id="o6D-FB-ctE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PGh-4g-Hr6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWD-43-qwQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750" y="1782"/>
+        </scene>
+        <!--City View Controller-->
+        <scene sceneID="0eS-OH-NmW">
+            <objects>
+                <viewController id="hHd-9d-Tu9" customClass="CityViewController" customModule="ARMGEO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kud-w5-g8Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="l0t-Ar-w4r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q8l-qY-mLA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2R-zj-EAK">
+                                <rect key="frame" x="0.0" y="117" width="375" height="550"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="C2R-zj-EAK" id="f8D-id-Aa0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYM-jp-CRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4277.6000000000004" y="1781.5592203898052"/>
         </scene>
     </scenes>
 </document>
