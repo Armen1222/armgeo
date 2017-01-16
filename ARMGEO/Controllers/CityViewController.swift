@@ -10,29 +10,25 @@ import UIKit
 
 class CityViewController: UIViewController {
 
-    @IBOutlet weak var webView: UIWebView!
+    var path:String?
+    lazy var webView: UIWebView = {
+        let webView = UIWebView(frame: self.view.frame)
+        return webView
+    }();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let googleURL = URL(string: "http://www.google.com")
-        let googleURLRequest = URLRequest(url: googleURL!)
-        webView.loadRequest(googleURLRequest)
         // Do any additional setup after loading the view.
+        self.view.addSubview(webView)
+        if let path = path {
+            let url = URL(string: path)
+            let req = URLRequest(url: url!)
+            webView.loadRequest(req)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
