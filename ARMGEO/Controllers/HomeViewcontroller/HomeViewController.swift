@@ -12,16 +12,12 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         let img = UIImage(named: "Menu Icon")!.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let leftBarButtonItem = UIBarButtonItem(image: img, style: UIBarButtonItemStyle.done, target: self, action: nil)
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
-        
         self.title = "About"
         navigationController?.navigationBar.barTintColor = UIColor.blue
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-
     }
 
     override func didReceiveMemoryWarning() {

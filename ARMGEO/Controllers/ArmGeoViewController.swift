@@ -20,8 +20,10 @@ class ArmGeoViewController: SwipeViewController {
         page_one.title = "Armenia"
         page_two.title = "Georgia"
         
+        self.navigationBar.setBackgroundImage
+       
         self.setViewControllerArray([page_one, page_two])
         setFirstViewController(1)
-        self.view.backgroundColor = UIColor.red
+        //self.setNavigati
     }
 }
